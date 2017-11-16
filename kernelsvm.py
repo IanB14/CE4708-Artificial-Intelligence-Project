@@ -561,7 +561,7 @@ def plotContours(Xs, Ts, Ls=None, b=None, K=rbfKernel, labelContours=False, labe
             ## with rows corresponding to x's and cols to y's.
     ## Plot contour lines at 0.0, +1.0 and -1.0.
     X, Y = meshgrid(xs, ys)
-    CS = plt.contour(X, Y, als, levels=[-1.0, 0.0, 1.0], linewidths=(1, 2, 1))
+    CS = plt.contour(X, Y, als, levels=[-1, 0, 1], linewidths=(1, 2, 1))
     ## Plot the training points using red 7 blue circles.
     for i, t in enumerate(Ts):
         if t < 0:
